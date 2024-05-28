@@ -1,0 +1,9 @@
+[package]
+name = "pitch_detection"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hound = "3.5.1"
+realfft = "3.3.0"
+rustfft = "6.2.0"
