@@ -71,36 +71,6 @@ pub fn detect_note_switches(reader: WavReader<BufReader<File>>) -> Vec<String> {
                 }
             }
         }
-
-        // if bass_freq > 0.0 {
-        //     let midi_note = midi::frequency_to_midi(bass_freq);
-        //     let note_name = midi::midi_to_note_name(midi_note);
-
-        //     detected_notes.push(note_name.clone());
-
-        //     if detected_notes.len() >= debounce_frames {
-        //         let last_detected_note = &detected_notes[detected_notes.len() - debounce_frames];
-        //         if note_name != prev_note && note_name == *last_detected_note {
-        //             println!(
-        //                 "Detected bass note switch: {} at {:.2} Hz",
-        //                 note_name, bass_freq
-        //             );
-        //             prev_note = note_name;
-        //             detected_notes.clear();
-        //         }
-        //     }
-
-        //     // if note_name != prev_note {
-        //     //     println!(
-        //     //         "Detected bass note switch: {} at {:.2} Hz",
-        //     //         note_name, bass_freq
-        //     //     );
-        //     //     notes.push(note_name.clone());
-        //     //     detected_notes.push(note_name.clone());
-
-        //     //     prev_note = note_name;
-        //     // }
-        // }
     }
 
     notes
